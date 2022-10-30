@@ -10,11 +10,12 @@ public class Sol27 {
 
     public static long solution(int balls, int share) {
         share = Math.min(balls - share, share);
-
+        System.out.println("share = " + share);
         if (share == 0)
             return 1L;
 
         long result = solution(balls - 1, share - 1);
+        System.out.println("result = " + result);
         result *= balls;
         result /= share;
 
