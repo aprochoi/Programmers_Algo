@@ -13,7 +13,8 @@ public class Sol43 {
         Arrays.sort(sides);
         int max = sides[sides.length - 1];
 
-        if(sides[0] + sides[1] <= max) return 2;
-        else return 1;
+//        if(sides[0] + sides[1] <= max) return 2;
+//        else return 1;
+        return max >= sides[0] + sides[1] ? 2 : 1;
     }
 }
