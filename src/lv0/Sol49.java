@@ -1,5 +1,6 @@
 package lv0;
 
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class Sol49 {
@@ -15,11 +16,13 @@ public class Sol49 {
             res.add(String.valueOf(my_string.charAt(i)));
         }
 
-        String index1 = String.valueOf(my_string.charAt(num1));
-        String index2 = String.valueOf(my_string.charAt(num2));
+//        String index1 = String.valueOf(my_string.charAt(num1));
+//        String index2 = String.valueOf(my_string.charAt(num2));
+//
+//        res.set(num1, index2);
+//        res.set(num2, index1);
 
-        res.set(num1, index2);
-        res.set(num2, index1);
+        Collections.swap(res, num1, num2);
 
 
         return String.join("", res);
