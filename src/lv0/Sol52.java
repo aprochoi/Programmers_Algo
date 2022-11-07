@@ -2,20 +2,12 @@ package lv0;
 
 public class Sol52 {
     public static void main(String[] args) {
-        System.out.println(solution(29183, 1));
-        System.out.println(solution(232443, 4));
-        System.out.println(solution(123456, 7));
+        System.out.println(solution("happy birthday!"));
+        System.out.println(solution("I love you~"));
     }
 
-    public static int solution(int num, int k) {
-        String res = String.valueOf(num);
+    public static int solution(String message) {
 
-        if (!res.contains(String.valueOf(k))) {
-            return -1;
-        }
-
-        int index = res.indexOf(String.valueOf(k));
-
-        return index + 1;
+        return message.length() * 2;
     }
 }
