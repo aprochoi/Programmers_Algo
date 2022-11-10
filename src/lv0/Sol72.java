@@ -11,7 +11,7 @@ public class Sol72 {
     }
 
     static int solution(String my_string) {
-        String[] arr = my_string.replaceAll("\\D", "a").split("a");
+        String[] arr = my_string.replaceAll("\\D", " ").split(" ");
         int res = 0;
 
         for (int i = 0; i < arr.length; i++) {
