@@ -17,7 +17,10 @@ public class Sol74 {
 
         for (int i = 1; i < sideSum; i++) {
             int longLeg = sides[0] + i;
-            if ((max < longLeg && longLeg <= sideSum) || (i > max)) {
+            // 가장 긴변이 max 일 때
+            if ((max < longLeg && longLeg <= sideSum)
+                    // i가 가장 긴변 일 때
+                    || (i > max)) {
                 count++;
             }
         }
